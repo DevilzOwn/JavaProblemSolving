@@ -24,7 +24,7 @@ public class MainClass
         root.right.right.left = new BSTNode(14);
         root.right.right.right = new BSTNode(15);
 
-        root.left.right.left.left = new BSTNode(16);
+//        root.left.right.left.left = new BSTNode(16);
         root.left.right.left.right = new BSTNode(17);
         root.left.right.left.right.left = new BSTNode(18);
         root.left.right.left.right.left.right = new BSTNode(21);
@@ -34,7 +34,8 @@ public class MainClass
         root.left.right.right.right.right = new BSTNode(20);
         root.left.right.right.right.left.right = new BSTNode(23);
 
-        operations.printNearestk(root,2,5,new BSTNode[23],0);
+//        operations.printNearestk(root,3,5,new BSTNode[23],0);
+        System.out.println(operations.nearestLeafNode(root,5,new BSTNode[23], 0));
 
     }
 }
